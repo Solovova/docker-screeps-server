@@ -1,0 +1,34 @@
+
+
+
+//Docker commands
+docker ps
+docker ps -a
+docker rm ..
+docker rmi ..
+docker volume ls
+
+docker exec -it 787c25461bc1 /bin/bash
+docker exec -it 787c25461bc1 npx screeps cli
+
+
+
+install
+
+init
+run
+docker ps -a
+docker exec -it ... /bin/bash
+yarn add screepsmod-auth screepsmod-tickrate screepsmod-admin-utils screepsmod-features
+
+{
+  "mods": [
+    "node_modules/screepsmod-auth/index.js",
+    "node_modules/screepsmod-tickrate/index.js",
+    "node_modules/screepsmod-admin-utils/index.js",
+    "node_modules/screepsmod-features/index.js"
+  ],
+  "bots": {
+    "simplebot": "node_modules/@screeps/simplebot/src"
+  }
+}

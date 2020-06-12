@@ -1,0 +1,10 @@
+https://wiki.screepspl.us/index.php/Private_Server_Common_Tasks
+
+system.resetAllData()
+
+!!!Only after char creation from client
+setPassword('Username', 'YourDesiredPassword')
+
+setTickRate(50)
+
+https://github.com/ScreepsMods/screepsmod-admin-utils
