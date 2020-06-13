@@ -1,0 +1,1 @@
+docker run -it --rm --mount type=volume,src=screeps,dst=/screeps quay.io/ags131/screeps-server init

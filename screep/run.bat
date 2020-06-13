@@ -1,0 +1,1 @@
+docker run -d --name screeps-server --mount type=volume,src=screeps,dst=/screeps -p 21025:21025 quay.io/ags131/screeps-server

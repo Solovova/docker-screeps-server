@@ -1,0 +1,1 @@
+docker run --rm -i -t -v screeps:/from -v docker-screeps-server_screeps:/to alpine ash -c "cd /from ; cp -av . /to"

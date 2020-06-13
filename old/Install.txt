@@ -8,8 +8,8 @@ docker rm ..
 docker rmi ..
 docker volume ls
 
-docker exec -it  screeps-server /bin/bash
-docker exec -it  screeps-server npx screeps cli
+docker exec -it  screeps /bin/bash
+docker exec -it  screeps npx screeps cli
 
 map.generateMap({start: 'W10N10', end: 'E10S10', closed: { left: false }, borders: { left: 2 }})
 
@@ -91,3 +91,7 @@ docker network create -d bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 do
 
 apt-get update
 apt-get install net-tools
+
+
+docker-compose build
+docker-compose up

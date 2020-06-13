@@ -1,0 +1,36 @@
+version: '2'
+services:
+    mongo:
+        container_name: mongo
+        image: mongo
+        ports:
+          - "27017:27017"
+        volumes:
+          - mongo-volume:/data/db             
+        restart: always  
+    redis:
+        container_name: redis
+        image: redis
+        ports:
+          - "6379:6379"
+        volumes:
+          - redis-volume:/data             
+        restart: always    
+    screeps:
+        container_name: screeps
+        image: solo_screeps      
+        ports:
+          - "21025:21025"
+        volumes:
+          - screeps:/screeps
+          - ./.screepsrc:/screeps/.screepsrc
+          - ./custom_mods.json:/screeps/mods.json
+        depends_on:
+          - mongo
+          - redis
+        restart: always
+
+volumes:
+    mongo-volume:
+    redis-volume:
+    screeps:
