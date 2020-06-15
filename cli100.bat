@@ -1,0 +1,1 @@
+docker exec -it  screeps /bin/bash -c "cd /screeps; echo 'system.setTickDuration(100)' | npx screeps cli"
