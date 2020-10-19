@@ -1,14 +1,15 @@
 місце знаходження C:\docker\screeps\docker-screeps-server
 архів C:\docker\screeps\archives
+версія в Dockerfile
 
 
 
 
-screeps/init.bat
+1) init.bat
 
 //створиться Image quay.io/ags131/screeps-server
 
-screeps/run.bat
+2) run.bat
 //запуститься контейнер
 
 docker ps -a
