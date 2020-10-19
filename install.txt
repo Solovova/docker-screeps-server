@@ -12,37 +12,38 @@
 2) run.bat
 //запуститься контейнер
 
-docker ps -a
+3) docker ps -a
 
 // id контейнера
-docker exec -it a898eff8103b /bin/bash 
+4) docker exec -it c1c95b771f5d /bin/bash 
 
 //в контейнері в bash
-yarn add screepsmod-auth screepsmod-mongo
-exit
+5) yarn add screepsmod-auth screepsmod-mongo
+6) exit
 
 
-docker commit screeps-server solo_screeps
+7) docker commit screeps-server solo_screeps
 
 //якщо запущено
-docker stop screeps-server
+8) docker stop screeps-server
 
 
 //не міняли версію Server
 restore.bat
 
 //міняли версію сервер
+9) docker-compose up //будуть помилки для початкової ініціалізації volume
+10) tcopy.bat
+11) trestore.bat
+12) docker-compose up //має стартанути
 
-
-mongo.importDB()
-system.resetAllData()
-utils.removeBots()
-
-
-docker-compose up
-
-//в cli
-setPassword('vsolo0', 'v12345')
+13) cli.bat
+14) system.resetAllData()
+15) ctrl c
+16) перезапуск docker-compose up
+17) заходимо на screeps клієнтом створюємо клієнта vsolo0
+18) cli.bat
+19) setPassword('vsolo0', 'v12345')
 
 //
 //Docker commands
