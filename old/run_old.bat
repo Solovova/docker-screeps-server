@@ -1,1 +1,0 @@
-docker run -d --name screeps-server --mount type=bind,src=c://docker//screeps//data,dst=/screeps --mount type=bind,src=c://docker//screeps//mongo,dst=/var/lib/mongodb --mount type=bind,src=c://docker//screeps//redis,dst=/var/lib/redis -p 21025:21025 -p 27017:27017 -p 6379:6379 soloserver1

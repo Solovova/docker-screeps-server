@@ -1,0 +1,38 @@
+місце знаходження C:\docker\screeps\docker-screeps-server
+архів C:\docker\screeps\archives
+
+
+screeps/init.bat
+
+//створиться Image quay.io/ags131/screeps-server
+
+screeps/run.bat
+//запуститься контейнер
+
+docker ps -a
+
+// id контейнера
+docker exec -it a898eff8103b /bin/bash 
+
+//в контейнері в bash
+yarn add screepsmod-auth screepsmod-mongo
+exit
+
+
+docker commit screeps-server solo_screeps
+
+//якщо запущено
+docker stop screeps-server
+
+restore.bat
+
+docker-compose up
+
+
+//
+//Docker commands
+docker ps
+docker ps -a
+docker rm ..
+docker rmi ..
+docker volume ls

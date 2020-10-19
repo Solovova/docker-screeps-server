@@ -1,4 +1,0 @@
-
-
-docker stop server_screeps
-copy folder

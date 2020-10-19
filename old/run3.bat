@@ -1,1 +1,0 @@
-docker run -d --name screeps-server --mount type=bind,src=c://docker//screeps//data//screeps,dst=/screeps --mount type=volume,src=mondodb,dst=/var/lib/mongodb -p 21025:21025 -p 27017:27017 lastserv
