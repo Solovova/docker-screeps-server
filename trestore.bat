@@ -1,0 +1,2 @@
+SET from1=docker-screeps-server_screeps
+docker run --rm -i -t --mount type=volume,src=%from1%,dst=/to --mount type=bind,src=c://docker//screeps//archives,dst=/from alpine ash -c "cd /to ; rm -rf *; tar xvf /from/screeps.tar.gz"

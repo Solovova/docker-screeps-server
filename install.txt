@@ -2,6 +2,8 @@
 архів C:\docker\screeps\archives
 
 
+
+
 screeps/init.bat
 
 //створиться Image quay.io/ags131/screeps-server
@@ -24,10 +26,22 @@ docker commit screeps-server solo_screeps
 //якщо запущено
 docker stop screeps-server
 
+
+//не міняли версію Server
 restore.bat
+
+//міняли версію сервер
+
+
+mongo.importDB()
+system.resetAllData()
+utils.removeBots()
+
 
 docker-compose up
 
+//в cli
+setPassword('vsolo0', 'v12345')
 
 //
 //Docker commands
