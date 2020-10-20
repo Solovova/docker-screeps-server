@@ -44,6 +44,11 @@ restore.bat
 17) заходимо на screeps клієнтом створюємо клієнта vsolo0
 18) cli.bat
 19) setPassword('vsolo0', 'v12345')
+20) bots.removeUser('MichaelBot')
+21) bots.removeUser('EmmaBot')
+22) bots.removeUser('JackBot')
+23) bots.removeUser('Bot')
+
 
 //
 //Docker commands
