@@ -15,7 +15,7 @@
 3) docker ps -a
 
 // id контейнера
-4) docker exec -it c1c95b771f5d /bin/bash 
+4) docker exec -it screeps-server /bin/bash 
 
 //в контейнері в bash
 5) yarn add screepsmod-auth screepsmod-mongo
@@ -47,7 +47,7 @@ restore.bat
 20) bots.removeUser('MichaelBot')
 21) bots.removeUser('EmmaBot')
 22) bots.removeUser('JackBot')
-23) bots.removeUser('Bot')
+23) bots.removeUser('AliceBot')
 
 
 //
